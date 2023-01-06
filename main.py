@@ -9,12 +9,12 @@ nr_numbers = int(input("How many numbers would you like?\n"))
 
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
-passList = getPassword(nr_letters, nr_numbers, nr_symbols)
-easy_password = ListTOString(passList)
+generated_pass = getPassword(nr_letters, nr_numbers, nr_symbols)
+easy_password = ListTOString(generated_pass)
 print(f"easy password (without randomized order): {easy_password}")
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
-random.shuffle(passList)
-hard_password = ListTOString(passList)
+random.shuffle(generated_pass)
+hard_password = ListTOString(generated_pass)
 print(f"hard password (with randomised order): {hard_password}")

@@ -18,9 +18,9 @@ def getPassword(nr_letters, nr_numbers, nr_symbols):
     return passAlpha + passNumerics + passSymbols
 
 
-def ListTOString(str):
+def ListTOString(geneated_pass):
     password = ''
-    for x in str:
+    for x in geneated_pass:
         password += x
         continue
     return password
